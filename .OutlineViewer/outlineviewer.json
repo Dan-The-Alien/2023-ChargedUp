@@ -1,0 +1,47 @@
+{
+  "NetworkTables Settings": {
+    "mode": "Client (NT4)",
+    "serverTeam": "localhost"
+  },
+  "transitory": {
+    "Shuffleboard": {
+      ".metadata": {
+        "Boot-Up": {
+          "# April Tags": {
+            "open": true
+          },
+          "Alliance": {
+            "Properties": {
+              "open": true
+            },
+            "open": true
+          },
+          "FMS Connected": {
+            "open": true
+          },
+          "Location": {
+            "open": true
+          },
+          "Selected Auto": {
+            "open": true
+          },
+          "Station": {
+            "open": true
+          },
+          "Vis Loc": {
+            "open": true
+          },
+          "open": true,
+          "∆ Rot": {
+            "open": true
+          },
+          "∆ Trans": {
+            "open": true
+          }
+        },
+        "open": true
+      },
+      "open": true
+    }
+  }
+}

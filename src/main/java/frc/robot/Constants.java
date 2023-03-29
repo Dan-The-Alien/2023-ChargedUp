@@ -102,4 +102,9 @@ public final class Constants {
       }
     }
   }
+
+  public static class ColorConstants {
+    public static final String kAllianceBlue = "#343fd8";
+    public static final String kAllianceRed = "#d83f34";
+  }
 }

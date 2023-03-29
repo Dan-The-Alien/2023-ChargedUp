@@ -15,6 +15,7 @@ import frc.robot.Constants.ArmConstants;
 import frc.robot.Constants.OperatorConstants;
 import frc.robot.commands.Autos;
 import frc.robot.subsystems.Arm;
+import frc.robot.subsystems.Dashboard;
 import frc.robot.subsystems.Drivetrain;
 import frc.robot.subsystems.EndEffector;
 import frc.robot.subsystems.ExampleSubsystem;
@@ -27,6 +28,7 @@ import frc.robot.subsystems.ExampleSubsystem;
  */
 public class RobotContainer {
   // The robot's subsystems and commands are defined here...
+  private final Dashboard m_dashboard = new Dashboard();
   private final ExampleSubsystem m_exampleSubsystem = new ExampleSubsystem();
   private final EndEffector m_endEffector = new EndEffector();
   private final Drivetrain m_drivetrain = new Drivetrain();
@@ -41,6 +43,7 @@ public class RobotContainer {
   public RobotContainer() {
     // Configure the trigger bindings
     configureBindings();
+    dashboardInit();
     m_drivetrain.setDefaultCommand(
         new RunCommand(
             () ->
@@ -125,6 +128,10 @@ public class RobotContainer {
     m_driverController
         .leftBumper()
         .onTrue(new RunCommand(() -> m_endEffector.retractGripper(), m_endEffector));
+  }
+
+  private void dashboardInit() {
+    m_dashboard.initialize();
   }
 
   /**
