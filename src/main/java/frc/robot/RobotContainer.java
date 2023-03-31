@@ -43,7 +43,6 @@ public class RobotContainer {
   public RobotContainer() {
     // Configure the trigger bindings
     configureBindings();
-    dashboardInit();
     m_drivetrain.setDefaultCommand(
         new RunCommand(
             () ->
@@ -128,10 +127,6 @@ public class RobotContainer {
     m_driverController
         .leftBumper()
         .onTrue(new RunCommand(() -> m_endEffector.retractGripper(), m_endEffector));
-  }
-
-  private void dashboardInit() {
-    m_dashboard.initialize();
   }
 
   /**
